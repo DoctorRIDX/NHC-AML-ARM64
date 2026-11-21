@@ -1,9 +1,0 @@
-build/
-obj/
-libs/
-stage/
-NHC.zip
-tests/test_nhc
-generated/*.h
-include/mod/*
-!include/mod/.gitkeep
