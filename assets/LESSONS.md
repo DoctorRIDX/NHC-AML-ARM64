@@ -37,3 +37,8 @@
 - Fix: no lambdas or method references in java/ (plain classes via one dispatcher), the script now rejects them before javac, and it prefers the newest stable `android-NN` platform
 - Rule going forward: a local check that substitutes the real dependency proves nothing about that dependency; keep Java to plain classes
 - Status: fixed (not yet confirmed by a new CI run)
+
+### L-005  Link failed: Logger and Config undefined
+- Cause: the AML mod sources mod/logger.cpp and mod/config.cpp must be compiled into the mod (official AML and JPatch Android.mk do this); the documentation page does not say so
+- Fix: added include/mod/logger.cpp and include/mod/config.cpp to LOCAL_SRC_FILES
+- Status: fixed (confirm with the next CI run)

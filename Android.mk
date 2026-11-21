@@ -13,7 +13,9 @@ LOCAL_SRC_FILES := \
     src/weapons.cpp \
     src/settings.cpp \
     src/menu.cpp \
-    src/ui_dex.cpp
+    src/ui_dex.cpp \
+    include/mod/logger.cpp \
+    include/mod/config.cpp
 
 # src/platform.cpp is #included by src/main.cpp (single TU for the AML headers).
 # include/mod/ is filled by the GitHub Actions workflow from the AML repository.
